@@ -34,7 +34,7 @@ actor HomeworkDiary {
     };
 
     // Marcar tarea como completada.
-    public shared func markAsComplete(id : Nat) : async Result.Result<(), Text> {
+    public shared func markAsCompleted(id : Nat) : async Result.Result<(), Text> {
         if (id >= homeworkDiary.size()) {
             return #err("Invalid homework id");
         };
